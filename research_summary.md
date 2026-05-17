@@ -22,6 +22,9 @@ I used NumPy, Matplotlib, Pandas, and scikit-learn to model and visualize simpli
 - Center-surround receptive fields
 - Spike train modeling
 - Signal filtering
+- Neural clustering methods
+- Convolution-based visual processing
+- Computational feature extraction
 
 ## Reflection
 
@@ -29,4 +32,12 @@ This project helped me move from simply visualizing biological patterns to askin
 
 ## Future Work
 
-Future directions include applying these methods to real retinal gene-expression datasets, exploring clustering methods, and building more biologically realistic models of retinal computation.
+Future directions include applying these methods to real retinal gene-expression datasets, exploring clustering methods, and building more biologically realistic models of retinal computation.Future directions include integrating experimentally recorded retinal datasets, analyzing neural population activity, exploring unsupervised clustering methods, and building more biologically realistic models of retinal computation and visual encoding.
+
+## Limitations
+
+Most models in this repository are simplified simulations rather than direct experimental measurements. They are intended to demonstrate computational approaches to retinal information processing, not to claim biological discovery.
+
+## Next Research Step
+
+The next stage of this project will involve applying these workflows to public retinal gene-expression or neural recording datasets, especially from sources such as NCBI GEO and the Allen Brain Atlas.
