@@ -69,6 +69,16 @@ Applies unsupervised machine learning techniques to simulated retinal signal pop
 ### 11_convolution_visual_processing.ipynb
 Introduces convolution-based visual processing techniques inspired by early-stage retinal and visual cortical computations. The notebook explores simplified edge-detection mechanisms and spatial filtering methods foundational to both biological vision and modern computer vision systems.
 
+### 12_gene_expression_simulation.ipynb
+Simulates retinal gene-expression profiles across photoreceptor, bipolar, and ganglion-like cell populations. This notebook applies PCA and clustering to explore how gene-expression patterns can separate retinal cell classes computationally.
+
+### 13_statistical_signal_analysis.ipynb
+Uses descriptive statistics, correlation analysis, and signal comparison to examine how biological noise affects retinal signal fidelity. This notebook adds a statistical interpretation layer to the project.
+
+## Biological Interpretation
+
+This simulation demonstrates how retinal systems may preserve stable signal structure despite biological variability and environmental noise.
+
 ### Potential Extensions:
 - Allen Brain Atlas retinal datasets
 - Neural electrophysiology recordings
@@ -94,10 +104,17 @@ Planned future work includes:
 - Neural spike train modeling
 - Computational models of visual encoding
 
+## References and Learning Sources
+
+- NCBI Gene Expression Omnibus
+- Allen Brain Atlas
+- Scikit-learn documentation
+- NumPy documentation
+- Matplotlib documentation
+- Introductory computational neuroscience resources
 ---
 
 ## Author
 
 Kwame Osei Senior 
-
 Computational Biology / Neuroscience Research Portfolio
