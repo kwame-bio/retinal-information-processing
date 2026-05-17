@@ -73,4 +73,5 @@ Planned future work includes:
 ## Author
 
 Kwame Osei Senior 
+
 Computational Biology / Neuroscience Research Portfolio
