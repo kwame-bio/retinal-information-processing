@@ -32,7 +32,11 @@ Simulates retinal ganglion cell spike trains to model neural firing behavior ove
 ### 08_signal_filtering.ipynb
 Implements computational filtering techniques to recover meaningful retinal signals from noisy biological data. The notebook compares noisy, filtered, and original signals to demonstrate how biological systems preserve signal fidelity under noisy conditions.
 
----
+### 09_real_retinal_data_analysis.ipynb
+Explores simulated retinal datasets representing photoreceptor, bipolar, and ganglion cell activity. The notebook demonstrates how biological signal propagation can be modeled computationally across retinal layers.
+
+### 10_retinal_signal_clustering.ipynb
+Applies machine learning clustering methods to simulated retinal signal patterns in order to identify hidden structure within neural data. The notebook introduces unsupervised learning approaches relevant to computational neuroscience and biological data analysis.
 
 ## Tools Used
 
