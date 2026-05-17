@@ -27,6 +27,32 @@ nav a {
 nav a:hover {
   color: white;
 }
+
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(1, 4, 9, 0.92);
+    padding: 16px 12%;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    border-bottom: 1px solid #30363d;
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+}
+
+nav a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 12px #58a6ff;
+}
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
