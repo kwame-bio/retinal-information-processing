@@ -1,0 +1,29 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+time = np.linspace(0, 10, 200)
+
+photoreceptor_response = np.sin(time)
+bipolar_response = np.sin(time + 0.5)
+ganglion_response = np.sin(time + 1.0)
+
+retinal_data = pd.DataFrame({
+    "Time": time,
+    "Photoreceptor": photoreceptor_response,
+    "Bipolar_Cell": bipolar_response,
+    "Ganglion_Cell": ganglion_response
+})
+
+print(retinal_data.head())
+
+plt.figure(figsize=(10, 6))
+plt.plot(time, photoreceptor_response, label="Photoreceptor")
+plt.plot(time, bipolar_response, label="Bipolar Cell")
+plt.plot(time, ganglion_response, label="Ganglion Cell")
+
+plt.title("Simulated Retinal Signal Propagation")
+plt.xlabel("Time")
+plt.ylabel("Signal Intensity")
+plt.legend()
+plt.show()
