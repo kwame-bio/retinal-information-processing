@@ -4,7 +4,35 @@ This repository documents my early computational neuroscience and biological sig
 
 ## Research Motivation
 
-The retina is not simply a passive detector of light. It performs layered biological computation that transforms noisy sensory input into stable neural representations. This project explores simplified computational models of retinal signal propagation and analysis using Python.
+This project explores how retinal systems encode, filter, and transform visual information through computational modeling techniques inspired by neuroscience and biological signal processing.
+
+The retina serves as the first stage of visual computation in biological systems, converting light stimuli into structured neural signals that can be interpreted by the brain. This repository investigates simplified computational representations of retinal signaling, receptive field organization, frequency decomposition, spike train generation, and signal clustering.
+
+
+## Computational Methods
+
+The project utilizes several computational neuroscience and signal processing techniques, including:
+
+- Principal Component Analysis (PCA)
+- Fourier Transform analysis
+- Signal filtering
+- Spike train simulations
+- Receptive field modeling
+- Clustering algorithms
+- Simulated neural signal generation
+
+Python libraries used include NumPy, Matplotlib, and Scikit-learn.
+
+## Biological Relevance
+
+These simulations model simplified aspects of retinal information processing and neural encoding. The work draws conceptual inspiration from computational neuroscience, visual systems biology, and neural signal analysis.
+
+Potential future applications include:
+- retinal disease modeling
+- neural decoding
+- visual prosthetics research
+- machine vision systems
+- biologically inspired artificial intelligence
 
 ## Notebooks
 
@@ -21,22 +49,31 @@ Simulates biological noise within retinal systems by introducing stochastic vari
 Applies Principal Component Analysis (PCA) to simulated retinal signals in order to reduce dimensionality and identify dominant patterns in neural information. The notebook demonstrates how high-dimensional biological data can be compressed into interpretable representations.
 
 ### 05_fourier_signal_analysis.ipynb
-Uses Fourier Transform methods to analyze the frequency composition of retinal signals. This notebook investigates how periodic signal structures can be decomposed into frequency-domain components relevant to neural encoding and visual processing.
+Applies Fourier Transform methods to simulated retinal signals in order to analyze hidden frequency components within neural activity. This notebook demonstrates how oscillatory patterns and periodic biological signals can be decomposed into interpretable spectral representations commonly used in computational neuroscience and electrophysiology.
 
 ### 06_receptive_field_modeling.ipynb
-Models center-surround receptive field organization commonly observed in retinal ganglion cells. The notebook computationally demonstrates excitatory and inhibitory interactions that contribute to edge detection and contrast enhancement in biological vision systems.
+Models center-surround receptive field organization inspired by retinal ganglion cell architecture. Using Gaussian-based excitation and inhibition profiles, this notebook simulates how biological visual systems enhance contrast and spatial edge detection before higher-level cortical processing.
 
 ### 07_spike_train_modeling.ipynb
-Simulates retinal ganglion cell spike trains to model neural firing behavior over time. This notebook explores temporal coding principles, spike-event generation, and simplified representations of neuronal communication within retinal circuits.
+Simulates simplified neuronal spike train activity to represent discrete retinal firing events over time. The notebook introduces temporal neural encoding concepts used in computational neuroscience and neural information processing research.
 
 ### 08_signal_filtering.ipynb
-Implements computational filtering techniques to recover meaningful retinal signals from noisy biological data. The notebook compares noisy, filtered, and original signals to demonstrate how biological systems preserve signal fidelity under noisy conditions.
+Implements computational filtering techniques for reducing biological signal noise while preserving important retinal signal structure. Demonstrates foundational preprocessing methods commonly applied in electrophysiological and neural recording analysis.
 
 ### 09_real_retinal_data_analysis.ipynb
-Explores simulated retinal datasets representing photoreceptor, bipolar, and ganglion cell activity. The notebook demonstrates how biological signal propagation can be modeled computationally across retinal layers.
+Explores analysis pipelines designed for future integration of experimentally recorded retinal datasets. The notebook establishes scalable workflows for handling multidimensional neural signal data and preparing biological recordings for downstream computational analysis.
 
 ### 10_retinal_signal_clustering.ipynb
-Applies machine learning clustering methods to simulated retinal signal patterns in order to identify hidden structure within neural data. The notebook introduces unsupervised learning approaches relevant to computational neuroscience and biological data analysis.
+Applies unsupervised machine learning techniques to simulated retinal signal populations. Using clustering algorithms, this notebook demonstrates how computational methods can identify underlying neural signal classes, response groupings, and emergent organizational structure within biological datasets.
+
+### 11_convolution_visual_processing.ipynb
+Introduces convolution-based visual processing techniques inspired by early-stage retinal and visual cortical computations. The notebook explores simplified edge-detection mechanisms and spatial filtering methods foundational to both biological vision and modern computer vision systems.
+
+### Potential Extensions:
+- Allen Brain Atlas retinal datasets
+- Neural electrophysiology recordings
+- Real spike train data
+- Calcium imaging analysis
 
 ## Tools Used
 
