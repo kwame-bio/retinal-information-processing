@@ -149,3 +149,12 @@ Planned future work includes:
 Kwame Osei Senior  
 
 Computational Biology / Neuroscience Research Portfolio
+
+## Repository Guide
+
+- `index.html` contains the public portfolio website.
+- `README.md` provides the main project overview.
+- `research_summary.md` summarizes key concepts and outcomes.
+- `retinal_information_processing_paper.md` contains the independent research manuscript.
+- Notebook files `01` through `13` document computational simulations, analyses, and biological interpretations.
+- The `images/` folder stores generated research visualizations.
