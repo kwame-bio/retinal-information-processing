@@ -1,6 +1,36 @@
 # Retinal Information Processing
 
-This repository documents my early computational neuroscience and biological signal processing work focused on retinal information flow, neural variability, and dimensionality reduction.
+A computational neuroscience portfolio exploring how retinal systems encode, filter, and organize biological information using Python, signal analysis, dimensionality reduction, and machine learning.
+
+## Project Focus
+
+This repository investigates the retina as an information-processing system. Through computational simulations, it explores how visual signals move through retinal layers, how biological noise affects signal fidelity, and how mathematical tools can reveal structure in neural activity.
+
+## Portfolio Website
+
+Live site: https://kwame-bio.github.io/retinal-information-processing/
+
+## Research Manuscript
+
+This repository includes an independent research manuscript:
+
+**Computational Modeling of Retinal Information Processing Under Biological Noise**
+
+## Current Modules
+
+1. Signal Visualization  
+2. Retinal Dataset Loading  
+3. Biological Noise Modeling  
+4. PCA Signal Analysis  
+5. Fourier Signal Analysis  
+6. Receptive Field Modeling  
+7. Spike Train Modeling  
+8. Signal Filtering  
+9. Real Retinal Data Analysis  
+10. Retinal Signal Clustering  
+11. Convolution Visual Processing  
+12. Real Gene Expression Analysis  
+13. Statistical Signal Analysis  
 
 ## Research Motivation
 
