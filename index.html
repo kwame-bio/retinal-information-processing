@@ -6,52 +6,30 @@
   <title>Kwame Osei | Retinal Information Processing</title>
 
   <style>
-   nav {
-  position: sticky;
-  top: 0;
-  background: #010409;
-  padding: 15px 12%;
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  border-bottom: 1px solid #30363d;
-  z-index: 1000;
-}
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(1, 4, 9, 0.92);
+      padding: 16px 12%;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      border-bottom: 1px solid #30363d;
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+    }
 
-nav a {
-  color: #57a5ff;
-  font-weight: bold;
-  text-decoration: none;
-}
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 0.4px;
+    }
 
-nav a:hover {
-  color: white;
-}
-
-nav {
-    position: sticky;
-    top: 0;
-    background: rgba(1, 4, 9, 0.92);
-    padding: 16px 12%;
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-    border-bottom: 1px solid #30363d;
-    backdrop-filter: blur(12px);
-    z-index: 1000;
-}
-
-nav a {
-    color: #58a6ff;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 0.4px;
-}
-
-nav a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 12px #58a6ff;
-}
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 12px #58a6ff;
+    }
 
     body {
       margin: 0;
@@ -96,44 +74,55 @@ nav a:hover {
     }
 
     .card {
-    background: rgba(22, 27, 34, 0.9);
-    padding: 24px;
-    border-radius: 18px;
-    border: 1px solid #30363d;
-    transition: all 0.35s ease;
-    position: relative;
-    overflow: hidden;
-    backdrop-filter: blur(8px);
-}
+      background: rgba(22, 27, 34, 0.9);
+      padding: 24px;
+      border-radius: 18px;
+      border: 1px solid #30363d;
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+    }
 
     .card:hover {
-    transform: translateY(-10px);
-    border-color: #58a6ff;
-    box-shadow: 0 0 35px rgba(88,166,255,0.18);
-}
+      transform: translateY(-10px);
+      border-color: #58a6ff;
+      box-shadow: 0 0 35px rgba(88,166,255,0.18);
+    }
 
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, #58a6ff, #00ffff);
-}
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, #58a6ff, #00ffff);
+    }
 
-   .card h3 {
-    color: #79c0ff;
-    margin-top: 0;
-    font-size: 1.25rem;
-    letter-spacing: 0.3px;
-}
+    .card h3 {
+      color: #79c0ff;
+      margin-top: 0;
+      font-size: 1.25rem;
+      letter-spacing: 0.3px;
+    }
 
-.card p {
-    color: #c9d1d9;
-    font-size: 0.98rem;
-    line-height: 1.7;
-}
+    .card p {
+      color: #c9d1d9;
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    .card a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+      color: #79c0ff;
+    }
 
     .skills span {
       display: inline-block;
@@ -153,54 +142,27 @@ nav a:hover {
       text-decoration: underline;
     }
 
-   <section id="questions">
-    <h2>Current Research Questions</h2>
-
-    <div class="card-grid">
-        <div class="card">
-            <h3>Signal Fidelity</h3>
-            <p>How do retinal systems preserve useful information under noisy biological conditions?</p>
-        </div>
-
-        <div class="card">
-            <h3>Neural Encoding</h3>
-            <p>How can spike trains and retinal activity patterns represent visual information over time?</p>
-        </div>
-
-        <div class="card">
-            <h3>Biological Organization</h3>
-            <p>Can computational analysis reveal hidden structure in retinal neural activity?</p>
-        </div>
-
-        <div class="card">
-            <h3>Information Theory</h3>
-            <p>How efficiently can retinal systems encode visual information despite biological variability?</p>
-        </div>
-    </div>
-</section>
-
     #about {
-    padding: 70px 12%;
-    background: #111827;
-    border-top: 1px solid #1f2937;
-    border-bottom: 1px solid #1f2937;
-}
+      padding: 70px 12%;
+      background: #111827;
+      border-top: 1px solid #1f2937;
+      border-bottom: 1px solid #1f2937;
+    }
 
-#about h2 {
-    color: #57a5ff;
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
+    #about h2 {
+      color: #57a5ff;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
 
-#about p {
-    max-width: 900px;
-    font-size: 1.05rem;
-    color: #c9d1d9;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    box-shadow: 0 0 30px rgba(88,166,255,0.08);
-    border-radius: 16px;
-}
+    #about p {
+      max-width: 900px;
+      font-size: 1.05rem;
+      color: #c9d1d9;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      line-height: 1.8;
+    }
 
     footer {
       text-align: center;
@@ -210,15 +172,16 @@ nav a:hover {
     }
 
     .about-box {
-    background: rgba(22, 27, 34, 0.75);
-    padding: 28px;
-    border-radius: 18px;
-    border: 1px solid #30363d;
-    max-width: 950px;
-    line-height: 1.9;
-    font-size: 1.05rem;
-    box-shadow: 0 0 20px rgba(0,0,0,0.25);
-}
+      background: rgba(22, 27, 34, 0.75);
+      padding: 28px;
+      border-radius: 18px;
+      border: 1px solid #30363d;
+      max-width: 950px;
+      line-height: 1.9;
+      font-size: 1.05rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.25);
+      margin-bottom: 30px;
+    }
   </style>
 </head>
 
@@ -226,6 +189,7 @@ nav a:hover {
 <nav>
   <a href="#about">About</a>
   <a href="#questions">Questions</a>
+  <a href="#highlights">Highlights</a>
   <a href="#modules">Modules</a>
   <a href="#methods">Methods</a>
   <a href="#summary">Summary</a>
@@ -233,271 +197,239 @@ nav a:hover {
   <a href="https://github.com/kwame-bio/retinal-information-processing" target="_blank">GitHub</a>
 </nav>
 
-  <header>
-    <h1>Retinal Information Processing</h1>
+<header>
+  <h1>Retinal Information Processing</h1>
+  <p>
+    A computational neuroscience portfolio exploring how retinal systems encode,
+    filter, and organize biological information using Python, signal analysis,
+    dimensionality reduction, and machine learning.
+  </p>
+</header>
+
+<section id="about">
+  <h2>About the Researcher</h2>
+  <div class="about-box">
     <p>
-      A computational neuroscience portfolio exploring how retinal systems encode,
-      filter, and organize biological information using Python, signal analysis,
-      dimensionality reduction, and machine learning.
+      I am Kwame Osei Senior, a computational biology and neuroscience student
+      interested in how neural systems encode, preserve, and transform biological
+      information. My current work focuses on retinal information processing,
+      signal propagation, biological variability, and computational models of
+      visual encoding.
     </p>
-  </header>
-  <section id="about">
-    <h2>About the Researcher</h2>
-    <div class="about-box"></div>
-    <p>
-        I am Kwame Osei Senior, a computational biology and neuroscience student
-        interested in how neural systems encode, preserve, and transform biological
-        information. My current work focuses on retinal information processing,
-        signal propagation, biological variability, and computational models of
-        visual encoding.
-    </p>
-    </div>
 
     <p>
-        Through Python-based simulations and data analysis, I explore how retinal
-        circuits filter noisy sensory input into stable neural representations.
-        My long-term goal is to contribute to computational neuroscience and
-        vision research by combining biological reasoning with quantitative modeling.
+      Through Python-based simulations and data analysis, I explore how retinal
+      circuits filter noisy sensory input into stable neural representations.
+      My long-term goal is to contribute to computational neuroscience and
+      vision research by combining biological reasoning with quantitative modeling.
     </p>
+  </div>
 </section>
 
 <section id="highlights">
-    <h2>Research Highlights</h2>
+  <h2>Research Highlights</h2>
 
-    <div class="card-grid">
-
-        <div class="card">
-            <h3>Retinal Signal Modeling</h3>
-            <p>Simulated neural waveform propagation to study how retinal cells transmit structured visual information.</p>
-        </div>
-
-        <div class="card">
-            <h3>Principal Component Analysis</h3>
-            <p>Applied dimensionality reduction techniques to identify dominant patterns in simulated retinal activity.</p>
-        </div>
-
-        <div class="card">
-            <h3>Fourier Signal Analysis</h3>
-            <p>Explored frequency-domain decomposition of biological signals using computational neuroscience methods.</p>
-        </div>
-
-        <div class="card">
-            <h3>Spike Train Simulations</h3>
-            <p>Modeled simplified neural firing activity to investigate information encoding over time.</p>
-        </div>
-
+  <div class="card-grid">
+    <div class="card">
+      <h3>Retinal Signal Modeling</h3>
+      <p>Simulated neural waveform propagation to study how retinal cells transmit structured visual information.</p>
     </div>
+
+    <div class="card">
+      <h3>Principal Component Analysis</h3>
+      <p>Applied dimensionality reduction techniques to identify dominant patterns in simulated retinal activity.</p>
+    </div>
+
+    <div class="card">
+      <h3>Fourier Signal Analysis</h3>
+      <p>Explored frequency-domain decomposition of biological signals using computational neuroscience methods.</p>
+    </div>
+
+    <div class="card">
+      <h3>Spike Train Simulations</h3>
+      <p>Modeled simplified neural firing activity to investigate information encoding over time.</p>
+    </div>
+  </div>
 </section>
 
-  <section>
-    <h2>Research Focus</h2>
-    <p>
-      This project investigates the retina as an information-processing system.
-      Through computational simulations, I explore how visual signals move through
-      retinal layers, how noise affects biological fidelity, and how mathematical
-      tools can reveal structure in neural activity.
-    </p>
-  </section>
+<section id="questions">
+  <h2>Current Research Questions</h2>
 
-  <section id="modules">
+  <div class="card-grid">
+    <div class="card">
+      <h3>Signal Fidelity</h3>
+      <p>How do retinal systems preserve useful information under noisy biological conditions?</p>
+    </div>
+
+    <div class="card">
+      <h3>Neural Encoding</h3>
+      <p>How can spike trains and retinal activity patterns represent visual information over time?</p>
+    </div>
+
+    <div class="card">
+      <h3>Biological Organization</h3>
+      <p>Can computational analysis reveal hidden structure in retinal neural activity?</p>
+    </div>
+
+    <div class="card">
+      <h3>Information Theory</h3>
+      <p>How efficiently can retinal systems encode visual information despite biological variability?</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Research Focus</h2>
+  <p>
+    This project investigates the retina as an information-processing system.
+    Through computational simulations, I explore how visual signals move through
+    retinal layers, how noise affects biological fidelity, and how mathematical
+    tools can reveal structure in neural activity.
+  </p>
+</section>
+
+<section id="modules">
   <h2>Featured Research Modules</h2>
 
-    <div class="card-grid">
-
-      <div class="card">
-        <h3>Signal Visualization</h3>
-        <p>Simulates basic retinal waveforms and introduces biological signal plotting.</p>
-        <a href="01_signal_visualization.ipynb" target="_blank">
-    View Notebook
-</a>
-      </div>
-
-      <div class="card">
-        <h3>Noise Modeling</h3>
-        <p>Models biological variability and its effect on retinal signal fidelity.</p>
-        <a href="02_retinal_dataset_loading.ipynb" target="_blank">
-    View Notebook
-</a>
-      </div>
-
-      <div class="card">
-        <h3>PCA Analysis</h3>
-        <p>Uses dimensionality reduction to examine hidden structure in retinal signals.</p>
-        <a href="03_retinal_noise_modeling.ipynb" target="_blank">
-    View Notebook
-</a>
-      </div>
-
-      <div class="card">
-        <h3>Fourier Analysis</h3>
-        <p>Studies frequency-domain patterns in simulated retinal neural activity.</p>
-        <a href="04_pca_signal_analysis.ipynb" target="_blank">
-    View Notebook
-</a>
-      </div>
-
-      <div class="card">
-        <h3>Receptive Field Modeling</h3>
-        <p>Models center-surround retinal receptive fields and contrast enhancement.</p>
-        <a href="05_fourier_signal_analysis.ipynb" target="_blank">
-    View Notebook
-</a>
-      </div>
-
-      <div class="card">
-        <h3>Spike Train Modeling</h3>
-        <p>Simulates retinal ganglion cell firing events over time.</p>
-        <a href="06_receptive_field_modeling.ipynb" target="_blank">
-    View Notebook
-</a>
-      </div>
-
-      <div class="card">
-        <h3>Signal Filtering</h3>
-        <p>Applies filtering methods to recover meaningful signals from noisy data.</p>
-        <a href="07_spike_train_modeling.ipynb" target="_blank">
-    View Notebook
-</a>
-      </div>
-
-      <div class="card">
-        <h3>Signal Clustering</h3>
-        <p>Uses machine learning to identify structure in retinal signal populations.</p>
-        <a href="08_signal_filtering.ipynb" target="_blank">
-    View Notebook
-</a>
-      </div>
-
-      <div class="card">
-    <h3>Dataset Loading</h3>
-
-    <p>
-        Demonstrates how retinal datasets are generated, structured,
-        and prepared for computational analysis workflows.
-    </p>
-
-    <a href="02_retinal_dataset_loading.ipynb" target="_blank">
-        View Notebook
-    </a>
-</div>
-
-<div class="card">
-    <h3>Real Retinal Data Analysis</h3>
-
-    <p>
-        Explores biologically inspired retinal datasets and investigates
-        computational patterns in neural signal propagation.
-    </p>
-
-    <a href="09_real_retinal_data_analysis.ipynb" target="_blank">
-        View Notebook
-    </a>
-</div>
-
-<div class="card">
-    <h3>Convolution Visual Processing</h3>
-
-    <p>
-        Simulates convolution-based filtering methods inspired by
-        biological visual processing systems.
-    </p>
-
-    <a href="11_convolution_visual_processing.ipynb" target="_blank">
-        View Notebook
-    </a>
-</div>
-
-<div class="card">
-    <h3>Statistical Signal Analysis</h3>
-
-    <p>
-        Applies statistical methods to characterize retinal neural activity,
-        variability, and computational structure.
-    </p>
-
-    <a href="13_statistical_signal_analysis.ipynb" target="_blank">
-        View Notebook
-    </a>
-</div>
-
-<div class="card">
-    <h3>Research Summary</h3>
-
-    <p>
-        Summarizes the computational neuroscience concepts explored
-        throughout the retinal information processing portfolio.
-    </p>
-
-    <a href="research_summary.md" target="_blank">
-        View Summary
-    </a>
-</div>
-
-
-
+  <div class="card-grid">
+    <div class="card">
+      <h3>Signal Visualization</h3>
+      <p>Simulates basic retinal waveforms and introduces biological signal plotting.</p>
+      <a href="01_signal_visualization.ipynb" target="_blank">View Notebook</a>
     </div>
-  </section>
 
-  <section>
-    <section id="methods">
-    <div class="skills">
-      <span>Python</span>
-      <span>NumPy</span>
-      <span>Pandas</span>
-      <span>Matplotlib</span>
-      <span>Scikit-learn</span>
-      <span>PCA</span>
-      <span>Fourier Analysis</span>
-      <span>Machine Learning</span>
-      <span>Signal Processing</span>
-      <span>Computational Neuroscience</span>
+    <div class="card">
+      <h3>Noise Modeling</h3>
+      <p>Models biological variability and its effect on retinal signal fidelity.</p>
+      <a href="02_retinal_dataset_loading.ipynb" target="_blank">View Notebook</a>
     </div>
-  </section>
 
-  <section>
-    <h2>Research Summary</h2>
-    <p>
-      This project began with basic signal visualization and expanded into a
-      structured computational investigation of retinal information processing.
-      The notebooks model neural variability, dimensionality reduction, frequency
-      structure, receptive field organization, spike trains, filtering, and clustering.
-    </p>
-  </section>
+    <div class="card">
+      <h3>PCA Analysis</h3>
+      <p>Uses dimensionality reduction to examine hidden structure in retinal signals.</p>
+      <a href="03_retinal_noise_modeling.ipynb" target="_blank">View Notebook</a>
+    </div>
 
-  <section>
-    <h2>Future Directions</h2>
-    <p>
-      Future work includes integrating experimentally recorded retinal datasets,
-      analyzing neural population activity, exploring real retinal gene-expression
-      data, and building more biologically realistic models of visual encoding.
-    </p>
-  </section>
+    <div class="card">
+      <h3>Fourier Analysis</h3>
+      <p>Studies frequency-domain patterns in simulated retinal neural activity.</p>
+      <a href="04_pca_signal_analysis.ipynb" target="_blank">View Notebook</a>
+    </div>
 
-  <section>
-    <h2>Links</h2>
-    <p>
-      <a href="https://github.com/kwame-bio/retinal-information-processing" target="_blank">
-        View Full GitHub Repository
-      </a>
-    </p>
-  </section>
+    <div class="card">
+      <h3>Receptive Field Modeling</h3>
+      <p>Models center-surround retinal receptive fields and contrast enhancement.</p>
+      <a href="05_fourier_signal_analysis.ipynb" target="_blank">View Notebook</a>
+    </div>
 
+    <div class="card">
+      <h3>Spike Train Modeling</h3>
+      <p>Simulates retinal ganglion cell firing events over time.</p>
+      <a href="06_receptive_field_modeling.ipynb" target="_blank">View Notebook</a>
+    </div>
+
+    <div class="card">
+      <h3>Signal Filtering</h3>
+      <p>Applies filtering methods to recover meaningful signals from noisy data.</p>
+      <a href="07_spike_train_modeling.ipynb" target="_blank">View Notebook</a>
+    </div>
+
+    <div class="card">
+      <h3>Signal Clustering</h3>
+      <p>Uses machine learning to identify structure in retinal signal populations.</p>
+      <a href="08_signal_filtering.ipynb" target="_blank">View Notebook</a>
+    </div>
+
+    <div class="card">
+      <h3>Dataset Loading</h3>
+      <p>Demonstrates how retinal datasets are generated, structured, and prepared for computational analysis workflows.</p>
+      <a href="02_retinal_dataset_loading.ipynb" target="_blank">View Notebook</a>
+    </div>
+
+    <div class="card">
+      <h3>Real Retinal Data Analysis</h3>
+      <p>Explores biologically inspired retinal datasets and investigates computational patterns in neural signal propagation.</p>
+      <a href="09_real_retinal_data_analysis.ipynb" target="_blank">View Notebook</a>
+    </div>
+
+    <div class="card">
+      <h3>Convolution Visual Processing</h3>
+      <p>Simulates convolution-based filtering methods inspired by biological visual processing systems.</p>
+      <a href="11_convolution_visual_processing.ipynb" target="_blank">View Notebook</a>
+    </div>
+
+    <div class="card">
+      <h3>Statistical Signal Analysis</h3>
+      <p>Applies statistical methods to characterize retinal neural activity, variability, and computational structure.</p>
+      <a href="13_statistical_signal_analysis.ipynb" target="_blank">View Notebook</a>
+    </div>
+
+    <div class="card">
+      <h3>Research Summary</h3>
+      <p>Summarizes the computational neuroscience concepts explored throughout the retinal information processing portfolio.</p>
+      <a href="research_summary.md" target="_blank">View Summary</a>
+    </div>
+  </div>
+</section>
+
+<section id="methods">
+  <h2>Methods & Tools</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>NumPy</span>
+    <span>Pandas</span>
+    <span>Matplotlib</span>
+    <span>Scikit-learn</span>
+    <span>PCA</span>
+    <span>Fourier Analysis</span>
+    <span>Machine Learning</span>
+    <span>Signal Processing</span>
+    <span>Computational Neuroscience</span>
+  </div>
+</section>
+
+<section id="summary">
+  <h2>Research Summary</h2>
+  <p>
+    This project began with basic signal visualization and expanded into a
+    structured computational investigation of retinal information processing.
+    The notebooks model neural variability, dimensionality reduction, frequency
+    structure, receptive field organization, spike trains, filtering, and clustering.
+  </p>
+</section>
+
+<section id="future">
+  <h2>Future Directions</h2>
+  <p>
+    Future work includes integrating experimentally recorded retinal datasets,
+    analyzing neural population activity, exploring real retinal gene-expression
+    data, and building more biologically realistic models of visual encoding.
+  </p>
+</section>
+
+<section>
+  <h2>Links</h2>
+  <p>
+    <a href="https://github.com/kwame-bio/retinal-information-processing" target="_blank">
+      View Full GitHub Repository
+    </a>
+  </p>
+</section>
+
+<div style="padding: 50px 12%;">
   <div class="card">
     <h3>Research Manuscript</h3>
-
     <p>
-        Full computational neuroscience paper investigating retinal information
-        processing, biological noise, and neural signal organization.
+      Full computational neuroscience paper investigating retinal information
+      processing, biological noise, and neural signal organization.
     </p>
-
-    <a href="retinal_information_processing_paper.md" target="_blank">
-        View Paper
-    </a>
+    <a href="retinal_information_processing_paper.md" target="_blank">View Paper</a>
+  </div>
 </div>
 
-  <footer>
-    <p>© 2026 Kwame Osei | Retinal Information Processing Portfolio</p>
-  </footer>
+<footer>
+  <p>© 2026 Kwame Osei | Retinal Information Processing Portfolio</p>
+</footer>
 
 </body>
 </html>
